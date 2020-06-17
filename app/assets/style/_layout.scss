@@ -1,0 +1,33 @@
+.wrap{
+    max-width: 1280px;
+}
+.sidebar{
+    top: 0;
+    bottom: 0;
+    width: 296px;
+}
+h1{
+    @include hide-text;
+    background-image: url(../images/logo-ANSWER.svg);
+    background-repeat: no-repeat;
+}
+.sidebar__item{
+    border-left: .25rem solid rgba(42, 131, 86, 0);
+}
+
+.sidebar__item:hover{
+    color: $primary;
+    border-left: 4px solid rgba(42, 131, 86, 1);
+
+}
+
+.sidebar__email{
+    line-height: 1rem;
+}
+.sidebar__active{
+    color: $primary;
+    border-left: 4px solid rgba(42, 131, 86, 1);
+}
+.main{
+    margin-left: 296px;
+}

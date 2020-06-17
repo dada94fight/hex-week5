@@ -1,0 +1,33 @@
+.assignment__img{
+    @include background-image;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.assignment__list-group{
+    padding-left: 0;
+    padding-right: 0;
+}
+.assignment__download{
+    border-color: #CDDDCD;
+}
+.assignment__reply{
+    position: absolute;
+    width: 603px;
+    bottom: 0px;
+    right: 15px;
+    display: none;
+    animation-name: assignment__reply;
+    animation-duration: .3s;
+}
+@keyframes assignment__reply{
+    from {
+        bottom: -318px;
+        right: -590px;
+    }
+    to{
+        bottom: 0px;
+        right: 15px;
+    }
+}
+
