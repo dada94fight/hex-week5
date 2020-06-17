@@ -1,9 +1,76 @@
----
-title: Dashboard Admin
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Admin</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- Lato字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrap d-flex mx-auto">
+      <nav class="sidebar bg-secondary position-fixed p-2rem d-flex flex-column justify-content-between">
+        <div>
+          <h1 class="mb-2rem">ANSWER</h1>
+  
+          <ul class="nav flex-column">
+            <li class="sidebar__item ml--2rem pl-1_75rem mb-4">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" href="#">
+                <span class="material-icons mr-3">insert_chart</span>
+                <span>Dashboard</span> 
+              </a>
+            </li>
+            <li class="sidebar__item ml--2rem pl-1_75rem mb-4">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" href="#">
+                <span class="material-icons mr-3">forum</span>
+                <span>Question</span> 
+              </a>              
+            </li>
+            <li class="sidebar__item ml--2rem pl-1_75rem mb-4">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" href="./index.html">
+                <span class="material-icons mr-3">assignment</span>
+                <span>Assignment</span>
+              </a>
+            </li>
+            <li class="sidebar__item ml--2rem pl-1_75rem mb-4">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" href="#">
+                <span class="material-icons mr-3">video_library</span>
+                <span>Course</span>
+              </a>
+            </li>
+            <li class="sidebar__item ml--2rem pl-1_75rem mb-4">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" id="admin" href="./admin.html">
+                <span class="material-icons mr-3">supervisor_account</span>
+                <span>Admin</span>
+              </a>
+            </li>
+            <li class="sidebar__item ml--2rem pl-1_75rem">
+              <a class="text-reset text-decoration-none font-weight-bold d-flex" href="#">
+                <span class="material-icons mr-3">settings</span>
+                <span>Settings</span>
+              </a>
+            </li>          
+          </ul>
+
+        </div>
+        <div class="d-flex">
+          <div class="assignment__img mr-3" style="background-image: url('assets/images/andychen.jpeg');"></div>
+          <div>
+            <h4 class="fontSize-1rem font-weight-bold mb-1">Andy Chen</h4>
+            <p class="sidebar__email fontSize-0_875rem text-setFontLight">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main p-2rem">
+        
 
 
 <!-- navbar -->
@@ -434,3 +501,16 @@ current: index
     </div>
   </div>
 </div>
+
+      </main>
+    </div>
+
+    
+
+    
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
